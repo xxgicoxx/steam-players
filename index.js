@@ -1,3 +1,3 @@
-const SteamController = require('./src/controllers/SteamController');
+const { SteamUserController } = require('./src/controllers');
 
-module.exports = SteamController;
+module.exports = SteamUserController;

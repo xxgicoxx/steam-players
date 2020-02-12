@@ -1,7 +1,7 @@
 {
   "name": "steam-players",
   "displayName": "Steam Players",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Node package for get Steam player summaries",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",

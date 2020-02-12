@@ -16,7 +16,7 @@ const steam = new Steam({
   key: 'STEAM_KEY', // https://steamcommunity.com/dev/apikey
 });
 
-steam.players().getPlayerSummaries('PLAYER_STEAM_ID').then((response) => {
+steam.playerSummaries('PLAYER_STEAM_ID').then((response) => {
   console.log(response);
 }).catch((error) => {
   console.error(error);

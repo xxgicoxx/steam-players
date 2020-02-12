@@ -1,7 +1,7 @@
 const api = {
-  url: 'http://api.steampowered.com',
-  users: {
-    summaries: '/ISteamUser/GetPlayerSummaries/v0002/',
+  url: 'https://api.steampowered.com',
+  ISteamUser: {
+    GetPlayerSummaries: '/ISteamUser/GetPlayerSummaries/v0002/',
   },
 };
 

@@ -4,8 +4,8 @@ class SteamController {
   /**
     * Steam config
     *
-    * @param {!Object} config configs
-    * @param {!string} config.key steam key
+    * @param {Object} config configs
+    * @param {string} config.key steam key
     */
   constructor(config = {}) {
     this._steamUserService = new SteamUserService(config);
@@ -14,12 +14,12 @@ class SteamController {
   /**
     * /ISteamUser/GetPlayerSummaries/v0002/
     *
-    * @param {!Object} options request params
-    * @param {!string[]} options.steamids steam ids
-    * @returns {Promise} return Promise
+    * @param {Object} options request params
+    * @param {string[]} options.steamids steam ids
+    * @returns {Promise} Promise
     */
   playerSummaries(options = {}) {
-    this._steamUserService._getPlayerSummaries(options);
+    return this._steamUserService._getPlayerSummaries(options);
   }
 }
 

@@ -1,23 +1,25 @@
-const request = require('request-promise-native');
+const fetch = require('node-fetch');
 
 const { apiConfig } = require('../configs');
 
 class SteamUserService {
   constructor(config) {
     this._config = config;
+    this._config.format = 'json';
   }
 
   async _getPlayerSummaries(options = {}) {
     try {
-      this._config.format = 'json';
-
-      const qs = Object.assign(options, this._config);
+      const queryString = Object.assign(options, this._config);
+      const params = new URLSearchParams();
+      Object.keys(queryString).forEach((key) => params.append(key, queryString[key]));
       const url = `${apiConfig.url}${apiConfig.ISteamUser.GetPlayerSummaries}`;
-      const players = await request.get({ url, qs });
 
-      return JSON.parse(players).response.players;
-    } catch (ex) {
-      throw new Error(ex);
+      const players = await fetch(`${url}?${params}`);
+
+      return (await players.json()).response.players;
+    } catch (error) {
+      throw new Error(error);
     }
   }
 }

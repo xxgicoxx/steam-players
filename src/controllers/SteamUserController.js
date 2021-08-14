@@ -2,13 +2,11 @@ const { SteamUserService } = require('../services');
 
 class SteamController {
   /**
-    * Steam config
-    *
     * @param {Object} config configs
     * @param {string} config.key steam key
     */
-  constructor(config = {}) {
-    this._steamUserService = new SteamUserService(config);
+  constructor(config) {
+    this._service = new SteamUserService(config);
   }
 
   /**
@@ -18,8 +16,8 @@ class SteamController {
     * @param {string[]} options.steamids steam ids
     * @returns {Promise} Promise
     */
-  playerSummaries(options = {}) {
-    return this._steamUserService._getPlayerSummaries(options);
+  playerSummaries(options) {
+    return this._service.getPlayerSummaries(options);
   }
 }
 

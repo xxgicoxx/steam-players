@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
  *
  * @param {Object} options Options
  * @param {string} options.url URL
- * @param {Object} options.qs Query string
+ * @param {Object} [options.qs] Query parameters
  * @param {string} [options.method = 'GET'] Method
  * @param {string} [options.type = 'json'] Response type
  */

@@ -1,5 +1,5 @@
 # steam-players
-Node.js package for get Steam player summaries.
+Steamworks Web API player summaries wrapper for Node.js.
 
 <p align="center">
   <img src="assets/imgs/steam.png">

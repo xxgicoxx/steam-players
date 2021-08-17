@@ -2,7 +2,7 @@
 Node.js package for get Steam player summaries.
 
 <p align="center">
-  <img src="https://i.imgur.com/sJWX3Q5.png">
+  <img src="assets/imgs/steam.png">
 </p>
 
 # Docs

@@ -1,6 +1,6 @@
 {
   "name": "steam-players",
-  "displayName": "Steam Players",
+  "displayName": "steam-players",
   "version": "2.0.3",
   "description": "Node.js package for get Steam player summaries",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",

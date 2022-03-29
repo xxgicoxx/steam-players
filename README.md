@@ -50,5 +50,5 @@ const steam = new Steam({
 # Authors
 * [xxgicoxx](https://github.com/xxgicoxx)
 
-### Acknowledgments
+# Acknowledgments
 * [FlatIcon](https://www.flaticon.com/)

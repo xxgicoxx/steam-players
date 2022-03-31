@@ -6,7 +6,7 @@ Steamworks Web API player summaries wrapper for Node.js.
 </p>
 
 # Docs
-[Documentation](https://partner.steamgames.com/doc/webapi/ISteamUser#GetPlayerSummaries)
+* [Documentation](https://partner.steamgames.com/doc/webapi/ISteamUser#GetPlayerSummaries)
 
 # Prerequisites
 * [Node.js](https://nodejs.org/en/)

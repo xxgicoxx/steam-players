@@ -1,11 +1,11 @@
-const { request } = require('../utils');
+const { constants, request } = require('../utils');
 
 const { apiConfig } = require('../configs');
 
 class SteamUserService {
   constructor(config) {
     this.config = config;
-    this.config.format = 'json';
+    this.config.format = constants.FORMAT_JSON;
   }
 
   async getPlayerSummaries(options) {

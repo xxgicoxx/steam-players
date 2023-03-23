@@ -1,7 +1,7 @@
 {
   "name": "steam-players",
   "displayName": "steam-players",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Steamworks Web API player summaries wrapper for Node.js",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",

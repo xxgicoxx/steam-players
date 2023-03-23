@@ -5,6 +5,9 @@ Steamworks Web API player summaries wrapper for Node.js.
   <img src="assets/imgs/steam.png">
 </p>
 
+# Features
+* Get player summaries
+
 # Docs
 * [Documentation](https://partner.steamgames.com/doc/webapi/ISteamUser#GetPlayerSummaries)
 
